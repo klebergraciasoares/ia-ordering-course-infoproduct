@@ -16,6 +16,7 @@ class CompanyIndex extends Component {
         // Lógica para listar as empresas 
         
         $this->companies = Company::all(); 
+        dd($this->companies);
         // Supondo que você tenha um modelo Company 
         return view('livewire.company-index', ['companies' => $this->companies, 'isModalOpen' => $this->isModalOpen]);
     }
